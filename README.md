@@ -12,9 +12,9 @@ For the intermediate submission, please enter the group and dataset information.
 
 | Student ID    | First Name  | Last Name      | E-Mail                    |  Workload [%] |
 | --------------|-------------|----------------|----------------------     |---------------|
-| 11942036      | Abdul Basit | Banbhan        |abdul.banbhan@jku.at       |30%           |
-| 12126769      | Hala        | Al-Jarajrah    |k12126769@students.jku.at  |30%           |
-| 12130348      | Nader       | Essam          |k12130348@students.jku.at  |30%           |
+| 11942036      | Abdul Basit | Banbhan        |abdul.banbhan@jku.at       |33%           |
+| 12126769      | Hala        | Al-Jarajrah    |k12126769@students.jku.at  |33%           |
+| 12130348      | Nader       | Essam          |k12130348@students.jku.at  |33%           |
 
 ## Final Submission
 The submission is done with this repository. Make to push your code until the deadline.
