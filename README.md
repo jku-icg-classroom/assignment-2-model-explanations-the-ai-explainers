@@ -61,24 +61,26 @@ Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote
 Find explainability approaches for the selected models. Repeat the section below for each approach to describe it.
 
 #### Approaches
-1. LIME: Local Interpretable Model-agnostic Explanations
+### 1. LIME: Local Interpretable Model-agnostic Explanations
+
 LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
 
-#### Why should one use the method?
+## Why should one use the method?
 This method creates a simpler glass-box that is implemented based on the black-box model and is easier to interpret.
 
-#### What could be visualized?
+## What could be visualized?
 Probabilities of the most important features and their influence (positive or negative) on the model prediction.
 
-#### When is this method used?
+## When is this method used?
 It can be used after training to evaluate the model as well as during training. Using the LIME method during training will help identify if some of the features are not important for training, allowing us to consider reducing the number of features and seeing this feature's effects on model prediction. Here LIME was used after training.
 
-#### Who would benefit from this method?
+## Who would benefit from this method?
 Model developers benefit from this method as it would make their work easier and faster, also more understandable.
-#### How can this method explain the model?
+
+## How can this method explain the model?
 The simpler glass-box model is trained on artificial data in a way that its predictions are similar to the predictions of original model.
 
-#### Where could this method be used?
+## Where could this method be used?
 It could be used for many models in which it is usually used to help explain problems, which have a lot of various features.
 
 * Breifly summarize the approach. 
