@@ -6,7 +6,7 @@ In this assignment, you are challenged to explain a model. For this, you will re
 
 For the intermediate submission, please enter the group and dataset information. Coding is not yet necessary.
 
-**Team Name:** the IA explainers
+**Team Name:** the AI explainers
 
 **Group Members**
 
