@@ -16,6 +16,23 @@ For the intermediate submission, please enter the group and dataset information.
 | 12126769      | Hala        | Al-Jarajrah    |k12126769@students.jku.at  |33%           |
 | 12130348      | Nader       | Essam          |k12130348@students.jku.at  |33%           |
 
+## Explainability framework: Hohman et al
+A brief examination major questions [Visual Analytics in Deep Learning: An Interrogative Survey for the Next Frontiers](https://arxiv.org/abs/1801.06889) by Hohman et. al from 2018.
+
+![](https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png)
+
+## Why, Who, What, When, Where, How
+TODO
+
+Question | Criterion | Explanation
+---      | ---       |         ---
+Why   |  | 
+Who   |  | 
+What  |  |
+When  |  |
+Where |  |
+How   |  | 
+
 ## Report
 
 ### Model & Data
