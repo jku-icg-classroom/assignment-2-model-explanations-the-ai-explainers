@@ -76,6 +76,10 @@ Write a brief summary reflecting on all approaches.
 
 ## Ineractive Demo via Streamlit
 TODO
+Making ineractive visualizations helps to understand the model better and get a better insight and that all about in XAI. For this, we will use [Streamlit](https://streamlit.io/). Streamlit is a Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science.
+
+[vis_feature_maps.webm](https://user-images.githubusercontent.com/27974341/206809086-2d41b28a-2fa2-4b69-b7cf-24a3d46f1c3b.webm)
+
 
 ## Final Submission
 The submission is done with this repository. Make to push your code until the deadline.
