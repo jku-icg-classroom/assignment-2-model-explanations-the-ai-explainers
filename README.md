@@ -74,6 +74,9 @@ It could be used for many models in which it is usually used to help explain pro
 ### Summary of Approaches
 Write a brief summary reflecting on all approaches.
 
+## Ineractive Demo via Streamlit
+TODO
+
 ## Final Submission
 The submission is done with this repository. Make to push your code until the deadline.
 
