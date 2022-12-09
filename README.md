@@ -16,39 +16,6 @@ For the intermediate submission, please enter the group and dataset information.
 | 12126769      | Hala        | Al-Jarajrah    |k12126769@students.jku.at  |33%           |
 | 12130348      | Nader       | Essam          |k12130348@students.jku.at  |33%           |
 
-## Final Submission
-The submission is done with this repository. Make to push your code until the deadline.
-
-The repository has to include the implementations of the picked approaches and the filled out report in this README.
-
-* Sending us an email with the code is not necessary.
-* Update the *environment.yml* file if you need additional libraries, otherwise the code is not executeable.
-* Save your final executed notebook(s) as html (File > Download as > HTML) and add them to your repository.
-
-## Development Environment
-
-Checkout this repo and change into the folder:
-```
-git clone https://github.com/jku-icg-classroom/xai_model_explanation_2022-<GROUP_NAME>.git
-cd xai_model_explanation_2022-<GROUP_NAME>
-```
-
-Load the conda environment from the shared `environment.yml` file:
-```
-conda env create -f environment.yml
-conda activate xai_model_explanation
-```
-
-> Hint: For more information on Anaconda and enviroments take a look at the README in our [tutorial repository](https://github.com/JKU-ICG/python-visualization-tutorial).
-
-Then launch Jupyter Lab:
-```
-jupyter lab
-```
-
-Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote](https://deepnote.com/), [colab](https://colab.research.google.com/), or any other service as long as the notebook runs in the standard Jupyter environment.
-
-
 ## Report
 
 ### Model & Data
@@ -89,3 +56,35 @@ It could be used for many models in which it is usually used to help explain pro
 
 ### Summary of Approaches
 Write a brief summary reflecting on all approaches.
+
+## Final Submission
+The submission is done with this repository. Make to push your code until the deadline.
+
+The repository has to include the implementations of the picked approaches and the filled out report in this README.
+
+* Sending us an email with the code is not necessary.
+* Update the *environment.yml* file if you need additional libraries, otherwise the code is not executeable.
+* Save your final executed notebook(s) as html (File > Download as > HTML) and add them to your repository.
+
+## Development Environment
+
+Checkout this repo and change into the folder:
+```
+git clone https://github.com/jku-icg-classroom/xai_model_explanation_2022-<GROUP_NAME>.git
+cd xai_model_explanation_2022-<GROUP_NAME>
+```
+
+Load the conda environment from the shared `environment.yml` file:
+```
+conda env create -f environment.yml
+conda activate xai_model_explanation
+```
+
+> Hint: For more information on Anaconda and enviroments take a look at the README in our [tutorial repository](https://github.com/JKU-ICG/python-visualization-tutorial).
+
+Then launch Jupyter Lab:
+```
+jupyter lab
+```
+
+Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote](https://deepnote.com/), [colab](https://colab.research.google.com/), or any other service as long as the notebook runs in the standard Jupyter environment.
