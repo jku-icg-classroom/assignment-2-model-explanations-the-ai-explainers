@@ -40,17 +40,17 @@ How   |  |
 * From where did you get the model and the data used?
 * Describe the model.
 
-### Explainability Approaches
+## Explainability Approaches
 
 Find explainability approaches for the selected models. Repeat the section below for each approach to describe it.
 
-### Approaches
+## Approaches
 
-#### 1. Feature Maps Visualization
+### 1. Feature Maps Visualization
 
  Visualizing filters and feature maps in convolutional neural networks (CNNs) is a technique used to better understand how these models work and what they are learning. Filters in a CNN are typically small spatial dimensions (e.g. 3x3 or 5x5) that are used to detect specific patterns in the input data. When a filter is applied to an input image, it produces a "feature map" that highlights the regions in the image that match the pattern the filter is looking for. By visualizing these filters and feature maps, we can gain insight into what the CNN is learning and how it is making predictions. This can be useful for debugging the model and improving its performance.
 
-##### Why should one use the method?
+#### Why should one use the method?
 
 There are several reasons why one might use the method of visualizing filters and feature maps in a CNN. Some of the main reasons include:
 
@@ -63,7 +63,7 @@ There are several reasons why one might use the method of visualizing filters an
 4. Communicating results to others: Visualizing the filters and feature maps can also be a useful tool for communicating the results of a CNN to others. By providing clear, intuitive visualizations of the model's inner workings, we can make it easier for others to understand and interpret the results.
 
 
-##### What could be visualized?
+#### What could be visualized?
 
 When visualizing filters and feature maps in a CNN, there are several things that can be visualized. These include:
 
@@ -73,11 +73,11 @@ When visualizing filters and feature maps in a CNN, there are several things tha
 
 3. Activation maps: Activation maps show the areas of the input image that are most "activated" by the filters, i.e. the areas that are most relevant to the predictions made by the CNN. By visualizing the activation maps, we can see which parts of the input image are most important to the model's predictions.
 
-##### When is this method used?
+#### When is this method used?
 
 The method of visualizing filters and feature maps in a CNN is typically used during the development and testing phases of a machine learning project. It is most often used when training and fine-tuning a CNN, as this is when we have the most control over the model and can make the most informed decisions about how to improve its performance.
 
-##### Who would benefit from this method?
+#### Who would benefit from this method?
 
 There are several groups of people who may benefit from the method of visualizing filters and feature maps in a convolutional neural network (CNN). These include:
 
@@ -87,39 +87,39 @@ There are several groups of people who may benefit from the method of visualizin
 
 3. Students and educators: Students and educators who are learning about CNNs and how they work may benefit from using this method as a way to gain a better understanding of the inner workings of these models. By visualizing the filters and feature maps, they can see how the CNN is processing the input data and making predictions, which can help to make the concepts more concrete and intuitive.
 
-##### How can this method explain the model?
+#### How can this method explain the model?
 
 By visualizing the filters and feature maps of a ResNet50 model, we can gain insights into how the model is processing the input data and making predictions.
 
 For example, we can visualize the filters in the first convolutional layer of a ResNet50 model to see what kind of patterns the model is looking for in the input data. We can then visualize the feature maps produced by these filters to see how well the filters are detecting these patterns in the input data. Finally, we can visualize the activation maps to see which parts of the input image are most important to the model's predictions.
 
-##### Where could this method be used?
+#### Where could this method be used?
 
 The method of visualizing filters and feature maps in a convolutional neural network (CNN) can be used in a variety of settings, including research labs, academic institutions, and industry. In general, this method can be used wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
 
 For example, machine learning researchers and practitioners may use this method when developing and training CNNs for a wide range of applications, such as image classification, object detection, and segmentation. Data scientists and analysts may also use this method when working with image data to gain insights into how a CNN is processing and interpreting the data. Additionally, students and educators may use this method as a tool for learning about CNNs and how they work.
 
 
-#### 2. LIME: Local Interpretable Model-agnostic Explanations
+### 2. LIME: Local Interpretable Model-agnostic Explanations
 
 LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
 
-##### Why should one use the method?
+#### Why should one use the method?
 This method creates a simpler glass-box that is implemented based on the black-box model and is easier to interpret.
 
-##### What could be visualized?
+#### What could be visualized?
 Probabilities of the most important features and their influence (positive or negative) on the model prediction.
 
-##### When is this method used?
+#### When is this method used?
 It can be used after training to evaluate the model as well as during training. Using the LIME method during training will help identify if some of the features are not important for training, allowing us to consider reducing the number of features and seeing this feature's effects on model prediction. Here LIME was used after training.
 
-##### Who would benefit from this method?
+#### Who would benefit from this method?
 Model developers benefit from this method as it would make their work easier and faster, also more understandable.
 
-##### How can this method explain the model?
+#### How can this method explain the model?
 The simpler glass-box model is trained on artificial data in a way that its predictions are similar to the predictions of original model.
 
-##### Where could this method be used?
+#### Where could this method be used?
 It could be used for many models in which it is usually used to help explain problems, which have a lot of various features.
 
 * Breifly summarize the approach. 
