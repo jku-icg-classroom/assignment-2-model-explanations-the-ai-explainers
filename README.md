@@ -26,10 +26,10 @@ TODO
 
 Question | Criterion | Explanation
 ---      | ---       |         ---
-Why   |  | 
-Who   |  | 
-What  |  |
-When  |  |
+Why      |           | 
+Who      |  | 
+What     |  |
+When     |  |
 Where |  |
 How   |  | 
 
@@ -41,10 +41,66 @@ How   |  |
 * Describe the model.
 
 ### Explainability Approaches
+
 Find explainability approaches for the selected models. Repeat the section below for each approach to describe it.
 
 ### Approaches
-#### 1. LIME: Local Interpretable Model-agnostic Explanations
+
+#### 1. Feature Maps Visualization
+
+ Visualizing filters and feature maps in convolutional neural networks (CNNs) is a technique used to better understand how these models work and what they are learning. Filters in a CNN are typically small spatial dimensions (e.g. 3x3 or 5x5) that are used to detect specific patterns in the input data. When a filter is applied to an input image, it produces a "feature map" that highlights the regions in the image that match the pattern the filter is looking for. By visualizing these filters and feature maps, we can gain insight into what the CNN is learning and how it is making predictions. This can be useful for debugging the model and improving its performance.
+
+##### Why should one use the method?
+
+There are several reasons why one might use the method of visualizing filters and feature maps in a CNN. Some of the main reasons include:
+
+1. Understanding how the CNN works: By visualizing the filters and feature maps, we can gain a better understanding of how the CNN is processing the input data and making predictions. This can help us to better interpret the results of the model and identify any potential problems or areas for improvement.
+
+2. Debugging the model: Visualizing the filters and feature maps can help us to identify any issues with the model, such as filters that are not learning useful patterns or feature maps that are not capturing the relevant information from the input data. This can be useful for debugging the model and improving its performance.
+
+3. Improving model performance: By gaining a deeper understanding of how the CNN is working, we can make more informed decisions about how to improve the model. For example, we may be able to identify which filters are not learning useful patterns, and therefore remove them from the model to improve its performance.
+
+4. Communicating results to others: Visualizing the filters and feature maps can also be a useful tool for communicating the results of a CNN to others. By providing clear, intuitive visualizations of the model's inner workings, we can make it easier for others to understand and interpret the results.
+
+
+##### What could be visualized?
+
+When visualizing filters and feature maps in a CNN, there are several things that can be visualized. These include:
+
+1. Filters: The filters in a CNN are the small spatial dimensions (e.g. 3x3 or 5x5) that are used to detect specific patterns in the input data. By visualizing the filters, we can see what kind of patterns the CNN is looking for in the input data.
+
+2. Feature maps: When a filter is applied to an input image, it produces a "feature map" that highlights the regions in the image that match the pattern the filter is looking for. By visualizing the feature maps, we can see how well the filters are detecting the patterns in the input data.
+
+3. Activation maps: Activation maps show the areas of the input image that are most "activated" by the filters, i.e. the areas that are most relevant to the predictions made by the CNN. By visualizing the activation maps, we can see which parts of the input image are most important to the model's predictions.
+
+##### When is this method used?
+
+The method of visualizing filters and feature maps in a CNN is typically used during the development and testing phases of a machine learning project. It is most often used when training and fine-tuning a CNN, as this is when we have the most control over the model and can make the most informed decisions about how to improve its performance.
+
+##### Who would benefit from this method?
+
+There are several groups of people who may benefit from the method of visualizing filters and feature maps in a convolutional neural network (CNN). These include:
+
+1. Machine learning researchers and practitioners: This method can be useful for researchers and practitioners who are working on developing and training CNNs. By visualizing the filters and feature maps, they can gain a better understanding of how the CNN is working and what it is learning, which can be helpful for debugging the model and improving its performance.
+
+2. Data scientists and analysts: Data scientists and analysts who are working with image data may find this method useful for gaining insights into how a CNN is processing and interpreting the data. By visualizing the filters and feature maps, they can see which patterns the CNN is detecting in the data and how it is using these patterns to make predictions.
+
+3. Students and educators: Students and educators who are learning about CNNs and how they work may benefit from using this method as a way to gain a better understanding of the inner workings of these models. By visualizing the filters and feature maps, they can see how the CNN is processing the input data and making predictions, which can help to make the concepts more concrete and intuitive.
+
+##### How can this method explain the model?
+
+By visualizing the filters and feature maps of a ResNet50 model, we can gain insights into how the model is processing the input data and making predictions.
+
+For example, we can visualize the filters in the first convolutional layer of a ResNet50 model to see what kind of patterns the model is looking for in the input data. We can then visualize the feature maps produced by these filters to see how well the filters are detecting these patterns in the input data. Finally, we can visualize the activation maps to see which parts of the input image are most important to the model's predictions.
+
+##### Where could this method be used?
+
+The method of visualizing filters and feature maps in a convolutional neural network (CNN) can be used in a variety of settings, including research labs, academic institutions, and industry. In general, this method can be used wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
+
+For example, machine learning researchers and practitioners may use this method when developing and training CNNs for a wide range of applications, such as image classification, object detection, and segmentation. Data scientists and analysts may also use this method when working with image data to gain insights into how a CNN is processing and interpreting the data. Additionally, students and educators may use this method as a tool for learning about CNNs and how they work.
+
+
+#### 2. LIME: Local Interpretable Model-agnostic Explanations
 
 LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
 
