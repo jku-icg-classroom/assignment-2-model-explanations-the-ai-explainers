@@ -34,11 +34,26 @@ Where |  |
 How   |  | 
 
 
-## Model & Data
+## Model
 
-* Which model are you going to explain? What does it do? On which data is it used?
-* From where did you get the model and the data used?
-* Describe the model.
+ResNet50 is a convolutional neural network that is trained on the ImageNet dataset, which is a large dataset of images that are organized into 1000 different classes. The network is 50 layers deep, which means it has 50 layers of neurons, including the input and output layers. The network is trained to take an image as input and predict which of the 1000 classes the image belongs to. To do this, the network uses a combination of convolutional layers, which extract features from the images, and fully connected layers, which interpret these features and make the final prediction. It is a popular choice for many computer vision tasks because it is trained to recognize a wide range of objects and scenes, and it can be easily fine-tuned for other specific image classification tasks. The "50" in its name refers to the fact that it has 50 layers, which is relatively deep for a convolutional neural network.
+
+### How to get and use the model?
+
+To use ResNet50 in PyTorch, you can use the torchvision.models module, which contains pre-trained versions of many popular deep learning models. To use ResNet50, you would first need to install PyTorch and torchvision. Then, one can use the following code to import the ResNet50 model:
+
+```python
+from torchvision import models
+
+resnet50 = models.resnet50(pretrained=True)
+```
+
+This will download the pre-trained ResNet50 model from the PyTorch model zoo and create a new instance of the model. The pretrained argument specifies whether to use the pre-trained weights or randomly initialize the model weights. In this case, we are using the pre-trained weights.
+
+## Dataset
+
+We use ImageNet dataset. ImageNet is a large dataset of images that is commonly used in image classification and computer vision research. It was first introduced in 2009 and has become one of the most widely used datasets for training and evaluating image recognition models. The dataset contains more than 14 million images that are organized into 1000 different classes, such as different types of animals, objects, and scenes. ImageNet has played a key role in the development of many state-of-the-art image classification models, including ResNet50.
+
 
 ## Explainability Approaches
 
