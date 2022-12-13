@@ -118,6 +118,14 @@ For example, machine learning researchers and practitioners may use this method 
 ### 2. Gradient-weighted Class Activation Mapping (Grad-CAM) and Local Interpretable Model-agnostic Explanations (LIME):
 Gradient-weighted Class Activation Mapping (Grad-CAM) is a highly class-discriminative method that uses the gradients of any target concept flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. It is a class-discriminative localization technique that generates visual explanations for any CNN-based network without requiring architectural changes or re-training. The technique is an improvement of other approaches in versatility and accuracy. It is complex but the output is intuitive. From a high-level, an image is taken as input and a model is created that is cut off at the layer for which we want to create a Grad-CAM heat-map. 
 
+The following code is used to initialize the GradCAM:
+
+```python
+cam = GradCAM(model=model, target_layers=target_layers)
+```
+![cat](https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg)
+ ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
+
 LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
 
 The following code is used for LIME explanation. LIME is imported and explanation is created for this prediciton.
