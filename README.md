@@ -144,7 +144,7 @@ The Grad-CAM technique utilizes the gradients of the classification score with r
 With the LIME, the simpler glass-box model is trained on artificial data in a way that its predictions are similar to the predictions of original model.
 
 #### Where could this method be used?
-The method could be used for any model in which it is usually used to help explain problems, which have a lot of various features.
+The method could be used for any model in which it is usually used to help explain problems, which have a lot of various features.  wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
 
 * Breifly summarize the approach. 
 * Categorize this explainability approach according to the criteria by Hohman et al.
