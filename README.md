@@ -120,15 +120,35 @@ Gradient-weighted Class Activation Mapping (Grad-CAM) is a highly class-discrimi
 
 LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
 
+LIME is imported and explanation is created for this prediciton.
+
+```python
+from lime import lime_image
+
+explainer = lime_image.LimeImageExplainer()
+explanation = explainer.explain_instance()
+```
+Masks are then used on the image to see the areas that are encouraging the model's top prediction.
+
+```python
+from skimage.segmentation import mark_boundaries
+
+img_boundry1 = mark_boundaries(explanation.top_labels[0], positive_only=True, num_features=5, hide_rest=False)
+```
+
 #### Why should one use the method?
 The gradCAM function computes an importance map that is enables understanding of the model.
 
-The LIME method creates a simpler glass-box that is implemented based on the black-box model and is easier to interpret.
+The LIME method creates a simpler glass-box that is implemented based on the black-box model and is easier to interpret. Even though we cannot understand the model’s learning or figure out its spurious conclusions, LIME can explains the model’s decision boundary in a human-understandable way. In short LIME’s explainer is interpretable even by non-experts.
 
 #### What could be visualized?
 Grad-CAM is a popular technique for visualizing where a convolutional neural network model is looking.
 
 LIME shows the probabilities of the most important features and their influence (positive or negative) on the model prediction.
+This interpretable representation would vary with the type of data that we are working with:
+1. For text: represents the presence/absence of words.
+2. For image: represents the presence/absence of superpixels.
+3. For tabular data: is a weighted combination of columns.
 
 #### When is this method used?
 Grad-CAM is applied to a neural network that is done training where the weights of the neural network are fixed. An image is fed into the network to calculate the Grad-CAM heatmap for that image for a chosen class of interest.
