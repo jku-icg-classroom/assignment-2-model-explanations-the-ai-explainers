@@ -120,7 +120,7 @@ Gradient-weighted Class Activation Mapping (Grad-CAM) is a highly class-discrimi
 
 LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
 
-LIME is imported and explanation is created for this prediciton.
+The following code is used for LIME explanation. LIME is imported and explanation is created for this prediciton.
 
 ```python
 from lime import lime_image
@@ -133,8 +133,13 @@ Masks are then used on the image to see the areas that are encouraging the model
 ```python
 from skimage.segmentation import mark_boundaries
 
-img_boundry1 = mark_boundaries(explanation.top_labels[0], positive_only=True, num_features=5, hide_rest=False)
+temp, mask = explanation.get_image_and_mask(explanation.top_labels[0], positive_only=False, num_features=10, hide_rest=False)
+img_boundry2 = mark_boundaries(temp/255.0, mask)
 ```
+The boolean values turn on/off areas that contributes against the top prediction and the background.
+
+![alt text](https://user-images.githubusercontent.com/92387828/207342513-0002c3ec-6669-4010-aa7e-7dc81a0bafcb.PNG)
+
 
 #### Why should one use the method?
 The gradCAM function computes an importance map that is enables understanding of the model.
@@ -156,7 +161,7 @@ Grad-CAM is applied to a neural network that is done training where the weights 
 LIME can be used after training to evaluate the model as well as during training. Using the LIME method during training will help identify if some of the features are not important for training, allowing us to consider reducing the number of features and seeing this feature's effects on model prediction. Here LIME was used after training.
 
 #### Who would benefit from this method?
-Both methods benefit model developers in which the method would make their work easier and faster, also more understandable.
+Both methods benefit model developers in which the method would make their work easier and faster, also more understandable. It is also interpretable by non-experts.
 
 #### How can this method explain the model?
 The Grad-CAM technique utilizes the gradients of the classification score with respect to the final convolutional feature map, to identify the parts of an input image that most impact the classification score. The places where this gradient is large are exactly the places where the final score depends most on the data.
