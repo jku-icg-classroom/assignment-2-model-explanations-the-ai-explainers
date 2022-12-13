@@ -122,6 +122,7 @@ LIME is a technique that approximates any black box machine learning model with 
 
 #### Why should one use the method?
 The gradCAM function computes an importance map that is enables understanding of the model.
+
 The LIME method creates a simpler glass-box that is implemented based on the black-box model and is easier to interpret.
 
 #### What could be visualized?
@@ -130,6 +131,7 @@ LIME shows the probabilities of the most important features and their influence 
 
 #### When is this method used?
 Grad-CAM is applied to a neural network that is done training where the weights of the neural network are fixed. An image is fed into the network to calculate the Grad-CAM heatmap for that image for a chosen class of interest.
+
 LIME can be used after training to evaluate the model as well as during training. Using the LIME method during training will help identify if some of the features are not important for training, allowing us to consider reducing the number of features and seeing this feature's effects on model prediction. Here LIME was used after training.
 
 #### Who would benefit from this method?
@@ -137,6 +139,7 @@ Both methods benefit model developers in which the method would make their work 
 
 #### How can this method explain the model?
 The Grad-CAM technique utilizes the gradients of the classification score with respect to the final convolutional feature map, to identify the parts of an input image that most impact the classification score. The places where this gradient is large are exactly the places where the final score depends most on the data.
+
 With the LIME, the simpler glass-box model is trained on artificial data in a way that its predictions are similar to the predictions of original model.
 
 #### Where could this method be used?
