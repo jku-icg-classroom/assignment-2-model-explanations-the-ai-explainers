@@ -127,6 +127,7 @@ The LIME method creates a simpler glass-box that is implemented based on the bla
 
 #### What could be visualized?
 Grad-CAM is a popular technique for visualizing where a convolutional neural network model is looking.
+
 LIME shows the probabilities of the most important features and their influence (positive or negative) on the model prediction.
 
 #### When is this method used?
