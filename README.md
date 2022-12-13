@@ -138,7 +138,7 @@ img_boundry2 = mark_boundaries(temp/255.0, mask)
 ```
 The boolean values turn on/off areas that contributes against the top prediction and the background.
 
-![alt text](https://user-images.githubusercontent.com/92387828/207342513-0002c3ec-6669-4010-aa7e-7dc81a0bafcb.PNG)
+![](https://user-images.githubusercontent.com/92387828/207342513-0002c3ec-6669-4010-aa7e-7dc81a0bafcb.PNG) ![](https://user-images.githubusercontent.com/92387828/207344508-09ad8960-dd19-42bd-8fab-9a69a76500a8.PNG) ![](https://user-images.githubusercontent.com/92387828/207344857-6e00b452-061e-4f12-b17b-4af6096a7657.PNG)
 
 
 #### Why should one use the method?
