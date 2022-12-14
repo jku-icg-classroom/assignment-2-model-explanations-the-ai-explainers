@@ -160,7 +160,7 @@ The method could be used for any model in which it is usually used to help expla
 Counterfactual explanations can be used to explain predictions of individual instances. The “event” is the predicted outcome of an instance, the “causes” are the particular feature values of this instance that were input to the model and “caused” a certain prediction. 
 Displayed as a graph, the relationship between the inputs and the prediction is very simple: The feature values cause the prediction.
 
-[graph.jpg](https://christophm.github.io/interpretable-ml-book/images/graph.jpg)
+![graph.jpg](https://christophm.github.io/interpretable-ml-book/images/graph.jpg)
 
 Adversarial examples are counterfactual examples with the aim to deceive the model, There are many techniques to create adversarial examples. Most approaches suggest minimizing the distance between the adversarial example and the instance to be manipulated, while shifting the prediction to the desired (adversarial) outcome. Some methods require access to the gradients of the model, which of course only works with gradient based models such as neural networks, other methods only require access to the prediction function, which makes these methods model-agnostic.
 
