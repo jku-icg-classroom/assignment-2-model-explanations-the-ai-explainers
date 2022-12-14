@@ -98,9 +98,27 @@ As the picture proceeds through the layers, the details from the photographs gra
 It is difficult for a human to determine that there is a cat in the image by the time it reaches the last convolutional layer (layer 48). These last layer outputs are critical for the fully connected neurons that comprise the classification layers in a convolutional neural network.
 
 ### Feature Visualization by Optimization - ReLU
+#### ReLU in the 5. layer
+![image](https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png)
+
+#### ReLU in the 10. layer
+![image](https://user-images.githubusercontent.com/27974341/207628513-08f73eea-889e-4b51-8646-cacf50748bfa.png)
+
+#### ReLU in the 16. layer
+![image](https://user-images.githubusercontent.com/27974341/207628669-588da539-f6e8-4cb5-b659-7e2907348719.png)
+
 
 
 ### Feature Visualization by Optimization - Convolutional Layer 
+
+#### 3. Convolutional Layer
+![image](https://user-images.githubusercontent.com/27974341/207629022-1c688116-e224-4d4c-88f0-0a253dde7442.png)
+
+#### 18. Convolutional Layer
+![image](https://user-images.githubusercontent.com/27974341/207629145-88eace42-4d75-4294-a352-e800abd3402f.png)
+
+#### 47. Convolutional Layer
+![image](https://user-images.githubusercontent.com/27974341/207629404-b6ad5151-f33d-40f7-8d32-0950f5758ee1.png)
 
 
 ### 2. Gradient-weighted Class Activation Mapping (Grad-CAM):
