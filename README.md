@@ -179,7 +179,7 @@ In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient 
 
 #### Why should one use the Adversarial Example?
 Deceving a model shows us how robust the model can be, in sense of classification model, we can figure out which classes are most vulnerable in the model. 
-In other words we can observe how much features of the input data can be change to influence the model output result which is expected to be a specific result before this change.
+In other words we can observe how far the features of the input data can be changed to influence the model output result which is expected to be a specific result before this change.
 
 #### What Exactly can be visualized or observed?
 
