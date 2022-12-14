@@ -162,8 +162,14 @@ Displayed as a graph, the relationship between the inputs and the prediction is 
 Adversarial examples are counterfactual examples with the aim to deceive the model, There are many techniques to create adversarial examples. Most approaches suggest minimizing the distance between the adversarial example and the instance to be manipulated, while shifting the prediction to the desired (adversarial) outcome. Some methods require access to the gradients of the model, which of course only works with gradient based models such as neural networks, other methods only require access to the prediction function, which makes these methods model-agnostic.
 
 In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient Sign Method)
+
 #### Why should one use the Adversarial Example?
 Deceving a model shows us how robust the model can be, in sense of classification model, we can figure out which classes are most vulnerable in the model.
+
+#### What Exactly can be visualized or observed?
+
+The change in the model output result after modifying an input that is expected to return a specific result.
+
 
 #### When is this method used?
 Adversarial Examples can be create when we have an access to a model that is done training.
