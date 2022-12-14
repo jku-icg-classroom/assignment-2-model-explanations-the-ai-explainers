@@ -191,21 +191,14 @@ Making ineractive visualizations helps to understand the model better and get a 
 [gradcam_demo.webm](https://user-images.githubusercontent.com/27974341/207174388-fc513dc1-b281-4eeb-a96b-03e7a8d26969.webm)
 
 
-## Final Submission
-The submission is done with this repository. Make to push your code until the deadline.
 
-The repository has to include the implementations of the picked approaches and the filled out report in this README.
-
-* Sending us an email with the code is not necessary.
-* Update the *environment.yml* file if you need additional libraries, otherwise the code is not executeable.
-* Save your final executed notebook(s) as html (File > Download as > HTML) and add them to your repository.
 
 ## Development Environment
 
 Checkout this repo and change into the folder:
 ```
-git clone https://github.com/jku-icg-classroom/xai_model_explanation_2022-<GROUP_NAME>.git
-cd xai_model_explanation_2022-<GROUP_NAME>
+git clone https://github.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers.git
+cd assignment-2-model-explanations-the-ai-explainers
 ```
 
 Load the conda environment from the shared `environment.yml` file:
