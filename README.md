@@ -19,7 +19,9 @@ For the intermediate submission, please enter the group and dataset information.
 ## Explainability framework: Hohman et al
 A brief examination major questions [Visual Analytics in Deep Learning: An Interrogative Survey for the Next Frontiers](https://arxiv.org/abs/1801.06889) by Hohman et. al from 2018.
 
-![](https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png)
+<p align="center">
+    <img src="https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png" width="30%" height="30%">
+</p>
 
 ## Why, Who, What, When, Where, How
 TODO
@@ -151,7 +153,7 @@ The following code is used to initialize the GradCAM:
 cam = GradCAM(model=model, target_layers=target_layers)
 ```
 
-<img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="40%" height="40%"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
+<img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="30%" height="30%"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
 
 
 #### Why should one use the method?
