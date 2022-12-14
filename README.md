@@ -54,10 +54,7 @@ This will download the pre-trained ResNet50 model from the PyTorch model zoo and
 
 We use ImageNet dataset. ImageNet is a large dataset of images that is commonly used in image classification and computer vision research. It was first introduced in 2009 and has become one of the most widely used datasets for training and evaluating image recognition models. The dataset contains more than 14 million images that are organized into 1000 different classes, such as different types of animals, objects, and scenes. ImageNet has played a key role in the development of many state-of-the-art image classification models, including ResNet50.
 
-<img src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg" width="80%" height="80%">
-<p align="center" width="100%">
-    <img width="80%" src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg">
-</p>
+<img src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg" width="50%" height="50%" align="center">
 
 
 ## Explainability Approaches
