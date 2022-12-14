@@ -155,14 +155,25 @@ The method could be used for any model in which it is usually used to help expla
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-### 3. Counterfactual Explainations:
+### 3. Counterfactual Explainations using Adversarial Example:
 
-* Breifly summarize the approach. 
-* Categorize this explainability approach according to the criteria by Hohman et al.
-* Interpret the results here. How does it help to explain your model?
+Counterfactual explanations can be used to explain predictions of individual instances. The “event” is the predicted outcome of an instance, the “causes” are the particular feature values of this instance that were input to the model and “caused” a certain prediction. 
+Displayed as a graph, the relationship between the inputs and the prediction is very simple: The feature values cause the prediction.
 
-### Summary of Approaches
-Write a brief summary reflecting on all approaches.
+[graph.jpg](https://christophm.github.io/interpretable-ml-book/images/graph.jpg)
+
+Adversarial examples are counterfactual examples with the aim to deceive the model, There are many techniques to create adversarial examples. Most approaches suggest minimizing the distance between the adversarial example and the instance to be manipulated, while shifting the prediction to the desired (adversarial) outcome. Some methods require access to the gradients of the model, which of course only works with gradient based models such as neural networks, other methods only require access to the prediction function, which makes these methods model-agnostic.
+
+In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient Sign Method)
+#### Why should one use the Adversarial Example?
+Deceving a model shows us how robust the model can be, in sense of classification model, we can figure out which classes are most vulnerable in the model.
+
+#### When is this method used?
+Adversarial Examples can be create when we have an access to a model that is done training.
+
+#### Who would benefit from this method?
+The model developers can benefit from this method when debugging to figure out which classes that the network is most vulnerable at.
+
 
 ## Ineractive Demo via Streamlit
 TODO
