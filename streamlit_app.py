@@ -316,38 +316,3 @@ if image_file_gradcam is not None:
 
         st.image(Image.fromarray(visualization, "RGB"))
     st.success("Done! 🪄")
-
-selected_images = image_list_test[-25:]
-
-# f, axarr = plt.subplots(5, 5, figsize=(35, 35))
-# c = 0
-# for i in range(5):
-#     for j in range(5):
-
-#         image_test = image.imread(selected_images[c])
-
-#         input_tensor = torch.from_numpy(
-#             np.expand_dims(np.transpose(image_test / 255.0, (2, 0, 1)), 0).astype(
-#                 np.float32
-#             )
-#         )
-#         grayscale_cam = cam(
-#             input_tensor=input_tensor,
-#             targets=targets,
-#             aug_smooth=True,
-#             eigen_smooth=True,
-#         )
-#         grayscale_cam = grayscale_cam[0, :]
-#         visualization = show_cam_on_image(
-#             np.array(
-#                 image_test / 255,
-#             ).astype(np.float32),
-#             grayscale_cam,
-#             use_rgb=True,
-#         )
-
-#         axarr[i, j].imshow(visualization)
-#         axarr[i, j].axis("off")
-#         c += 1
-
-# st.pyplot(f)
