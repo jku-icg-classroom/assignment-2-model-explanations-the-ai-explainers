@@ -106,7 +106,9 @@ It is difficult for a human to determine that there is a cat in the image by the
 <p align="center">
    <img src="https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png" width="30%" height="30%">   <img src="https://user-images.githubusercontent.com/27974341/207628513-08f73eea-889e-4b51-8646-cacf50748bfa.png" width="30%" height="30%">  <img src="https://user-images.githubusercontent.com/27974341/207628669-588da539-f6e8-4cb5-b659-7e2907348719.png" width="30%" height="30%"> 
 </p>
-
+<p>
+    <em>ReLU in the 5. layer</em>
+</p>
 
 
 ### Feature Visualization by Optimization - Convolutional Layer 
@@ -172,10 +174,7 @@ Displayed as a graph, the relationship between the inputs and the prediction is 
 
 Adversarial examples are counterfactual examples with the aim to deceive the model, There are many techniques to create adversarial examples. Most approaches suggest minimizing the distance between the adversarial example and the instance to be manipulated, while shifting the prediction to the desired (adversarial) outcome. Some methods require access to the gradients of the model, which of course only works with gradient based models such as neural networks, other methods only require access to the prediction function, which makes these methods model-agnostic.
 
-In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient Sign Method) to deceive **ResNet50**
-
-![](https://raw.githubusercontent.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers/main/pics/adv_example.png?token=GHSAT0AAAAAAB2E7ROHSJ53BSPCNSDV4YTEY42FY5Q)
-
+In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient Sign Method)
 #### Why should one use the Adversarial Example?
 Deceving a model shows us how robust the model can be, in sense of classification model, we can figure out which classes are most vulnerable in the model.
 
