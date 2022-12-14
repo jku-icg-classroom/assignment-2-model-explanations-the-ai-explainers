@@ -82,41 +82,25 @@ There are several reasons why one might use the method of visualizing filters an
 4. Communicating results to others: Visualizing the filters and feature maps can also be a useful tool for communicating the results of a CNN to others. By providing clear, intuitive visualizations of the model's inner workings, we can make it easier for others to understand and interpret the results.
 
 
-#### What could be visualized?
+### Filters 
 
-When visualizing filters and feature maps in a CNN, there are several things that can be visualized. These include:
+![filter](https://user-images.githubusercontent.com/27974341/207622544-f8e82d79-2649-4690-8f01-7a601f367e36.png)
 
-1. Filters: The filters in a CNN are the small spatial dimensions (e.g. 3x3 or 5x5) that are used to detect specific patterns in the input data. By visualizing the filters, we can see what kind of patterns the CNN is looking for in the input data.
+### Convolutional Layers
+![conv_l0](https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png)
 
-2. Feature maps: When a filter is applied to an input image, it produces a "feature map" that highlights the regions in the image that match the pattern the filter is looking for. By visualizing the feature maps, we can see how well the filters are detecting the patterns in the input data.
+![conv_l20](https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png)
 
-3. Activation maps: Activation maps show the areas of the input image that are most "activated" by the filters, i.e. the areas that are most relevant to the predictions made by the CNN. By visualizing the activation maps, we can see which parts of the input image are most important to the model's predictions.
+![conv_l40](https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png)
 
-#### When is this method used?
+As the picture proceeds through the layers, the details from the photographs gradually fade away. They appear to be noise, but there is undoubtedly a pattern in those feature maps that human eyes cannot identify, but a neural network can.
 
-The method of visualizing filters and feature maps in a CNN is typically used during the development and testing phases of a machine learning project. It is most often used when training and fine-tuning a CNN, as this is when we have the most control over the model and can make the most informed decisions about how to improve its performance.
+It is difficult for a human to determine that there is a cat in the image by the time it reaches the last convolutional layer (layer 48). These last layer outputs are critical for the fully connected neurons that comprise the classification layers in a convolutional neural network.
 
-#### Who would benefit from this method?
+### Feature Visualization by Optimization - ReLU
 
-There are several groups of people who may benefit from the method of visualizing filters and feature maps in a convolutional neural network (CNN). These include:
 
-1. Machine learning researchers and practitioners: This method can be useful for researchers and practitioners who are working on developing and training CNNs. By visualizing the filters and feature maps, they can gain a better understanding of how the CNN is working and what it is learning, which can be helpful for debugging the model and improving its performance.
-
-2. Data scientists and analysts: Data scientists and analysts who are working with image data may find this method useful for gaining insights into how a CNN is processing and interpreting the data. By visualizing the filters and feature maps, they can see which patterns the CNN is detecting in the data and how it is using these patterns to make predictions.
-
-3. Students and educators: Students and educators who are learning about CNNs and how they work may benefit from using this method as a way to gain a better understanding of the inner workings of these models. By visualizing the filters and feature maps, they can see how the CNN is processing the input data and making predictions, which can help to make the concepts more concrete and intuitive.
-
-#### How can this method explain the model?
-
-By visualizing the filters and feature maps of a ResNet50 model, we can gain insights into how the model is processing the input data and making predictions.
-
-For example, we can visualize the filters in the first convolutional layer of a ResNet50 model to see what kind of patterns the model is looking for in the input data. We can then visualize the feature maps produced by these filters to see how well the filters are detecting these patterns in the input data. Finally, we can visualize the activation maps to see which parts of the input image are most important to the model's predictions.
-
-#### Where could this method be used?
-
-The method of visualizing filters and feature maps in a convolutional neural network (CNN) can be used in a variety of settings, including research labs, academic institutions, and industry. In general, this method can be used wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
-
-For example, machine learning researchers and practitioners may use this method when developing and training CNNs for a wide range of applications, such as image classification, object detection, and segmentation. Data scientists and analysts may also use this method when working with image data to gain insights into how a CNN is processing and interpreting the data. Additionally, students and educators may use this method as a tool for learning about CNNs and how they work.
+### Feature Visualization by Optimization - Convolutional Layer 
 
 
 ### 2. Gradient-weighted Class Activation Mapping (Grad-CAM):
