@@ -4,6 +4,9 @@ channels:
   - defaults
 dependencies:
   - python=3.8
+  - streamlit
+  - cv2
+  - grad-cam
   - pip
   - notebook
   - jupyterlab
