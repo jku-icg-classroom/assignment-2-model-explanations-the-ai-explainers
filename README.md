@@ -104,7 +104,7 @@ It is difficult for a human to determine that there is a cat in the image by the
 ### Feature Visualization by Optimization - ReLU
 #### ReLU in the 5. layer
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png" width="30%" height="30%">
+    <img src="https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png" width="30%" height="30%"><em>ReLU in the 5. layer</em>
 </p>
 
 #### ReLU in the 10. layer
