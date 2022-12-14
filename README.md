@@ -20,7 +20,7 @@ For the intermediate submission, please enter the group and dataset information.
 A brief examination major questions [Visual Analytics in Deep Learning: An Interrogative Survey for the Next Frontiers](https://arxiv.org/abs/1801.06889) by Hohman et. al from 2018.
 
 <p align="center">
-    <img src="https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png" width="30%" height="30%">
+    <img src="https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png" width="50%" height="50%">
 </p>
 
 ## Why, Who, What, When, Where, How
