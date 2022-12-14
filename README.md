@@ -19,7 +19,9 @@ For the intermediate submission, please enter the group and dataset information.
 ## Explainability framework: Hohman et al
 A brief examination major questions [Visual Analytics in Deep Learning: An Interrogative Survey for the Next Frontiers](https://arxiv.org/abs/1801.06889) by Hohman et. al from 2018.
 
-![](https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png)
+<p align="center">
+    <img src="https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png" width="50%" height="50%">
+</p>
 
 ## Why, Who, What, When, Where, How
 TODO
@@ -54,9 +56,10 @@ This will download the pre-trained ResNet50 model from the PyTorch model zoo and
 
 We use ImageNet dataset. ImageNet is a large dataset of images that is commonly used in image classification and computer vision research. It was first introduced in 2009 and has become one of the most widely used datasets for training and evaluating image recognition models. The dataset contains more than 14 million images that are organized into 1000 different classes, such as different types of animals, objects, and scenes. ImageNet has played a key role in the development of many state-of-the-art image classification models, including ResNet50.
 
-<p align="center" width="100%">
-    <img width="80%" src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg">
+<p align="center">
+    <img src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg" width="30%" height="30%">
 </p>
+
 
 
 ## Explainability Approaches
@@ -83,43 +86,37 @@ There are several reasons why one might use the method of visualizing filters an
 
 
 ### Filters 
-
-![filter](https://user-images.githubusercontent.com/27974341/207622544-f8e82d79-2649-4690-8f01-7a601f367e36.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207622544-f8e82d79-2649-4690-8f01-7a601f367e36.png" width="30%" height="30%">
+</p>
 
 ### Convolutional Layers
-![conv_l0](https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png" width="20%" height="20%">                  <img src="https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png" width="20%" height="20%">                  <img src="https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png" width="20%" height="20%">
+</p>
 
-![conv_l20](https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png)
 
-![conv_l40](https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png)
 
 As the picture proceeds through the layers, the details from the photographs gradually fade away. They appear to be noise, but there is undoubtedly a pattern in those feature maps that human eyes cannot identify, but a neural network can.
 
 It is difficult for a human to determine that there is a cat in the image by the time it reaches the last convolutional layer (layer 48). These last layer outputs are critical for the fully connected neurons that comprise the classification layers in a convolutional neural network.
 
 ### Feature Visualization by Optimization - ReLU
-#### ReLU in the 5. layer
-![image](https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png)
-
-#### ReLU in the 10. layer
-![image](https://user-images.githubusercontent.com/27974341/207628513-08f73eea-889e-4b51-8646-cacf50748bfa.png)
-
-#### ReLU in the 16. layer
-![image](https://user-images.githubusercontent.com/27974341/207628669-588da539-f6e8-4cb5-b659-7e2907348719.png)
-
+#### ReLU in the 5. layer, ReLU in the 10. layer, ReLU in the 16. layer
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png" width="30%" height="30%">   <img src="https://user-images.githubusercontent.com/27974341/207628513-08f73eea-889e-4b51-8646-cacf50748bfa.png" width="30%" height="30%">  <img src="https://user-images.githubusercontent.com/27974341/207628669-588da539-f6e8-4cb5-b659-7e2907348719.png" width="30%" height="30%"> 
+</p>
 
 
 ### Feature Visualization by Optimization - Convolutional Layer 
 
-#### 3. Convolutional Layer
-![image](https://user-images.githubusercontent.com/27974341/207629022-1c688116-e224-4d4c-88f0-0a253dde7442.png)
+#### 3. Convolutional Layer, 18. Convolutional Layer, 47. Convolutional Layer
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207629022-1c688116-e224-4d4c-88f0-0a253dde7442.png" width="30%" height="30%"><img src="https://user-images.githubusercontent.com/27974341/207629145-88eace42-4d75-4294-a352-e800abd3402f.png" width="30%" height="30%"><img src="https://user-images.githubusercontent.com/27974341/207629404-b6ad5151-f33d-40f7-8d32-0950f5758ee1.png" width="30%" height="30%">
+</p>
 
-#### 18. Convolutional Layer
-![image](https://user-images.githubusercontent.com/27974341/207629145-88eace42-4d75-4294-a352-e800abd3402f.png)
-
-#### 47. Convolutional Layer
-![image](https://user-images.githubusercontent.com/27974341/207629404-b6ad5151-f33d-40f7-8d32-0950f5758ee1.png)
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. Gradient-weighted Class Activation Mapping (Grad-CAM):
 Gradient-weighted Class Activation Mapping (Grad-CAM) is a highly class-discriminative method that uses the gradients of any target concept flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. It is a class-discriminative localization technique that generates visual explanations for any CNN-based network without requiring architectural changes or re-training. The technique is an improvement of other approaches in versatility and accuracy. It is complex but the output is intuitive. From a high-level, an image is taken as input and a model is created that is cut off at the layer for which we want to create a Grad-CAM heat-map. 
@@ -130,7 +127,7 @@ The following code is used to initialize the GradCAM:
 cam = GradCAM(model=model, target_layers=target_layers)
 ```
 
-<img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="400" height="200"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
+<img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="30%" height="30%"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
 
 
 #### Why should one use the method?
@@ -151,12 +148,29 @@ The Grad-CAM technique utilizes the gradients of the classification score with r
 #### Where could this method be used?
 The method could be used for any model in which it is usually used to help explain problems, which have a lot of various features.  wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
 
-* Breifly summarize the approach. 
-* Categorize this explainability approach according to the criteria by Hohman et al.
-* Interpret the results here. How does it help to explain your model?
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+### 3. Counterfactual Explainations using Adversarial Example:
 
-### Summary of Approaches
-Write a brief summary reflecting on all approaches.
+Counterfactual explanations can be used to explain predictions of individual instances. The “event” is the predicted outcome of an instance, the “causes” are the particular feature values of this instance that were input to the model and “caused” a certain prediction. 
+Displayed as a graph, the relationship between the inputs and the prediction is very simple: The feature values cause the prediction.
+
+<p align="center">
+    <img src="https://christophm.github.io/interpretable-ml-book/images/graph.jpg" width="30%" height="30%">
+</p>
+
+Adversarial examples are counterfactual examples with the aim to deceive the model, There are many techniques to create adversarial examples. Most approaches suggest minimizing the distance between the adversarial example and the instance to be manipulated, while shifting the prediction to the desired (adversarial) outcome. Some methods require access to the gradients of the model, which of course only works with gradient based models such as neural networks, other methods only require access to the prediction function, which makes these methods model-agnostic.
+
+In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient Sign Method)
+#### Why should one use the Adversarial Example?
+Deceving a model shows us how robust the model can be, in sense of classification model, we can figure out which classes are most vulnerable in the model.
+
+#### When is this method used?
+Adversarial Examples can be create when we have an access to a model that is done training.
+
+#### Who would benefit from this method?
+The model developers can benefit from this method when debugging to figure out which classes that the network is most vulnerable at.
+
 
 ## Ineractive Demo via Streamlit
 TODO
