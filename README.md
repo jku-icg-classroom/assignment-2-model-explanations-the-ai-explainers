@@ -120,6 +120,8 @@ It is difficult for a human to determine that there is a cat in the image by the
 #### 47. Convolutional Layer
 ![image](https://user-images.githubusercontent.com/27974341/207629404-b6ad5151-f33d-40f7-8d32-0950f5758ee1.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. Gradient-weighted Class Activation Mapping (Grad-CAM):
 Gradient-weighted Class Activation Mapping (Grad-CAM) is a highly class-discriminative method that uses the gradients of any target concept flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. It is a class-discriminative localization technique that generates visual explanations for any CNN-based network without requiring architectural changes or re-training. The technique is an improvement of other approaches in versatility and accuracy. It is complex but the output is intuitive. From a high-level, an image is taken as input and a model is created that is cut off at the layer for which we want to create a Grad-CAM heat-map. 
@@ -150,6 +152,10 @@ The Grad-CAM technique utilizes the gradients of the classification score with r
 
 #### Where could this method be used?
 The method could be used for any model in which it is usually used to help explain problems, which have a lot of various features.  wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+### 3. Counterfactual Explainations:
 
 * Breifly summarize the approach. 
 * Categorize this explainability approach according to the criteria by Hohman et al.
