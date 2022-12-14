@@ -175,7 +175,7 @@ Adversarial examples are counterfactual examples with the aim to deceive the mod
 
 In this Assignment, we created an Adversarial Example using FGSM (Fast Gradient Sign Method) to deceive **ResNet50**
 
-![](https://raw.githubusercontent.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers/main/pics/adv_example.png?token=GHSAT0AAAAAAB2E7ROH2JJFRLDACLUBTRYAY42G37A)
+![](pics/adv_example.png)
 
 #### Why should one use the Adversarial Example?
 Deceving a model shows us how robust the model can be, in sense of classification model, we can figure out which classes are most vulnerable in the model.
@@ -202,28 +202,3 @@ Making ineractive visualizations helps to understand the model better and get a 
 
 [gradcam_demo.webm](https://user-images.githubusercontent.com/27974341/207174388-fc513dc1-b281-4eeb-a96b-03e7a8d26969.webm)
 
-
-
-
-## Development Environment
-
-Checkout this repo and change into the folder:
-```
-git clone https://github.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers.git
-cd assignment-2-model-explanations-the-ai-explainers
-```
-
-Load the conda environment from the shared `environment.yml` file:
-```
-conda env create -f environment.yml
-conda activate xai_model_explanation
-```
-
-> Hint: For more information on Anaconda and enviroments take a look at the README in our [tutorial repository](https://github.com/JKU-ICG/python-visualization-tutorial).
-
-Then launch Jupyter Lab:
-```
-jupyter lab
-```
-
-Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote](https://deepnote.com/), [colab](https://colab.research.google.com/), or any other service as long as the notebook runs in the standard Jupyter environment.
