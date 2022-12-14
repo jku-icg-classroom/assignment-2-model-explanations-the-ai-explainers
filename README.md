@@ -106,26 +106,38 @@ It is difficult for a human to determine that there is a cat in the image by the
 
 ### Feature Visualization by Optimization - ReLU
 #### ReLU in the 5. layer
-![image](https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207628164-bcc04537-c999-488f-8ea4-8af60899e5b0.png" width="30%" height="30%">
+</p>
 
 #### ReLU in the 10. layer
-![image](https://user-images.githubusercontent.com/27974341/207628513-08f73eea-889e-4b51-8646-cacf50748bfa.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207628513-08f73eea-889e-4b51-8646-cacf50748bfa.png" width="30%" height="30%">
+</p>
 
 #### ReLU in the 16. layer
-![image](https://user-images.githubusercontent.com/27974341/207628669-588da539-f6e8-4cb5-b659-7e2907348719.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207628669-588da539-f6e8-4cb5-b659-7e2907348719.png" width="30%" height="30%">
+</p>
 
 
 
 ### Feature Visualization by Optimization - Convolutional Layer 
 
 #### 3. Convolutional Layer
-![image](https://user-images.githubusercontent.com/27974341/207629022-1c688116-e224-4d4c-88f0-0a253dde7442.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207629022-1c688116-e224-4d4c-88f0-0a253dde7442.png" width="30%" height="30%">
+</p>
 
 #### 18. Convolutional Layer
-![image](https://user-images.githubusercontent.com/27974341/207629145-88eace42-4d75-4294-a352-e800abd3402f.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207629145-88eace42-4d75-4294-a352-e800abd3402f.png" width="30%" height="30%">
+</p>
 
 #### 47. Convolutional Layer
-![image](https://user-images.githubusercontent.com/27974341/207629404-b6ad5151-f33d-40f7-8d32-0950f5758ee1.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207629404-b6ad5151-f33d-40f7-8d32-0950f5758ee1.png" width="30%" height="30%">
+</p>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -139,7 +151,7 @@ The following code is used to initialize the GradCAM:
 cam = GradCAM(model=model, target_layers=target_layers)
 ```
 
-<img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="400" height="200"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
+<img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="40%" height="40%"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
 
 
 #### Why should one use the method?
@@ -167,7 +179,9 @@ The method could be used for any model in which it is usually used to help expla
 Counterfactual explanations can be used to explain predictions of individual instances. The “event” is the predicted outcome of an instance, the “causes” are the particular feature values of this instance that were input to the model and “caused” a certain prediction. 
 Displayed as a graph, the relationship between the inputs and the prediction is very simple: The feature values cause the prediction.
 
-![graph.jpg](https://christophm.github.io/interpretable-ml-book/images/graph.jpg)
+<p align="center">
+    <img src="https://christophm.github.io/interpretable-ml-book/images/graph.jpg" width="30%" height="30%">
+</p>
 
 Adversarial examples are counterfactual examples with the aim to deceive the model, There are many techniques to create adversarial examples. Most approaches suggest minimizing the distance between the adversarial example and the instance to be manipulated, while shifting the prediction to the desired (adversarial) outcome. Some methods require access to the gradients of the model, which of course only works with gradient based models such as neural networks, other methods only require access to the prediction function, which makes these methods model-agnostic.
 
