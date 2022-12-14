@@ -119,7 +119,7 @@ The method of visualizing filters and feature maps in a convolutional neural net
 For example, machine learning researchers and practitioners may use this method when developing and training CNNs for a wide range of applications, such as image classification, object detection, and segmentation. Data scientists and analysts may also use this method when working with image data to gain insights into how a CNN is processing and interpreting the data. Additionally, students and educators may use this method as a tool for learning about CNNs and how they work.
 
 
-### 2. Gradient-weighted Class Activation Mapping (Grad-CAM) and Local Interpretable Model-agnostic Explanations (LIME):
+### 2. Gradient-weighted Class Activation Mapping (Grad-CAM):
 Gradient-weighted Class Activation Mapping (Grad-CAM) is a highly class-discriminative method that uses the gradients of any target concept flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. It is a class-discriminative localization technique that generates visual explanations for any CNN-based network without requiring architectural changes or re-training. The technique is an improvement of other approaches in versatility and accuracy. It is complex but the output is intuitive. From a high-level, an image is taken as input and a model is created that is cut off at the layer for which we want to create a Grad-CAM heat-map. 
 
 The following code is used to initialize the GradCAM:
@@ -130,55 +130,21 @@ cam = GradCAM(model=model, target_layers=target_layers)
 
 <img src="https://user-images.githubusercontent.com/92387828/207347417-41ab3e69-9358-4b5c-bdf9-7f65d59422dd.jpg" width="400" height="200"> ![](https://user-images.githubusercontent.com/92387828/207347090-d771e587-0c08-421d-807f-592bd4361a7e.PNG)
 
-LIME is a technique that approximates any black box machine learning model with a local, interpretable model to explain each individual prediction. The LIME method approximates complicated black-box model to a simpler glass-box one and is usually used with problems having very large number of explanatory variables. In that case the resulting, simpler glass-box model is easier to interpret. The main idea is to train a simpler glass-box model on artificial data so that it approximates the predictions of a complicated black-box model. LIME helps to explain and understand the model locally, but can also be helpful with checking which features are considered as more important, and which seem not to be useful.
-
-The following code is used for LIME explanation. LIME is imported and explanation is created for this prediciton.
-
-```python
-from lime import lime_image
-
-explainer = lime_image.LimeImageExplainer()
-explanation = explainer.explain_instance()
-```
-Masks are then used on the image to see the areas that are encouraging the model's top prediction.
-
-```python
-from skimage.segmentation import mark_boundaries
-
-temp, mask = explanation.get_image_and_mask(explanation.top_labels[0], positive_only=False, num_features=10, hide_rest=False)
-img_boundry2 = mark_boundaries(temp/255.0, mask)
-```
-The boolean values turn on/off areas that contributes against the top prediction and the background.
-
-![](https://user-images.githubusercontent.com/92387828/207342513-0002c3ec-6669-4010-aa7e-7dc81a0bafcb.PNG) ![](https://user-images.githubusercontent.com/92387828/207344508-09ad8960-dd19-42bd-8fab-9a69a76500a8.PNG) ![](https://user-images.githubusercontent.com/92387828/207344857-6e00b452-061e-4f12-b17b-4af6096a7657.PNG)
-
 
 #### Why should one use the method?
-The gradCAM function computes an importance map that is enables understanding of the model.
-
-The LIME method creates a simpler glass-box that is implemented based on the black-box model and is easier to interpret. Even though we cannot understand the model’s learning or figure out its spurious conclusions, LIME can explains the model’s decision boundary in a human-understandable way. In short LIME’s explainer is interpretable even by non-experts.
+The gradCAM function computes an importance map that is enables understanding of the model. In short, the method is interpretable even by non-experts.
 
 #### What could be visualized?
-Grad-CAM is a popular technique for visualizing where a convolutional neural network model is looking.
-
-LIME shows the probabilities of the most important features and their influence (positive or negative) on the model prediction.
-This interpretable representation would vary with the type of data that we are working with:
-1. For text: represents the presence/absence of words.
-2. For image: represents the presence/absence of superpixels.
-3. For tabular data: is a weighted combination of columns.
+Grad-CAM is a popular technique for visualizing where a convolutional neural network model is looking. It shows the most important features and their influence on the model prediction.
 
 #### When is this method used?
-Grad-CAM is applied to a neural network that is done training where the weights of the neural network are fixed. An image is fed into the network to calculate the Grad-CAM heatmap for that image for a chosen class of interest.
-
-LIME can be used after training to evaluate the model as well as during training. Using the LIME method during training will help identify if some of the features are not important for training, allowing us to consider reducing the number of features and seeing this feature's effects on model prediction. Here LIME was used after training.
+Grad-CAM is applied to a neural network that is done training where the weights of the neural network are fixed. An image is fed into the network to calculate the Grad-CAM heatmap for that image for a chosen class of interest. Here, the method was used after training.
 
 #### Who would benefit from this method?
 Both methods benefit model developers in which the method would make their work easier and faster, also more understandable. It is also interpretable by non-experts.
 
 #### How can this method explain the model?
 The Grad-CAM technique utilizes the gradients of the classification score with respect to the final convolutional feature map, to identify the parts of an input image that most impact the classification score. The places where this gradient is large are exactly the places where the final score depends most on the data.
-
-With the LIME, the simpler glass-box model is trained on artificial data in a way that its predictions are similar to the predictions of original model.
 
 #### Where could this method be used?
 The method could be used for any model in which it is usually used to help explain problems, which have a lot of various features.  wherever there is a need to understand and interpret the inner workings of a CNN, such as when training and fine-tuning the model or when using the model to make predictions on new data.
