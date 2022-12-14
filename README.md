@@ -16,24 +16,36 @@ For the intermediate submission, please enter the group and dataset information.
 | 12126769      | Hala        | Al-Jarajrah    |k12126769@students.jku.at  |33%           |
 | 12130348      | Nader       | Essam          |k12130348@students.jku.at  |33%           |
 
+## Development Environment
+
+Checkout this repo and change into the folder:
+```
+git clone https://github.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers.git
+cd assignment-2-model-explanations-the-ai-explainers
+```
+
+Load the conda environment from the shared `environment.yml` file:
+```
+conda env create -f environment.yml
+conda activate xai_model_explanation
+```
+
+> Hint: For more information on Anaconda and enviroments take a look at the README in our [tutorial repository](https://github.com/JKU-ICG/python-visualization-tutorial).
+
+Then launch Jupyter Lab:
+```
+jupyter lab
+```
+
+Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote](https://deepnote.com/), [colab](https://colab.research.google.com/), or any other service as long as the notebook runs in the standard Jupyter environment.
+
+
 ## Explainability framework: Hohman et al
 A brief examination major questions [Visual Analytics in Deep Learning: An Interrogative Survey for the Next Frontiers](https://arxiv.org/abs/1801.06889) by Hohman et. al from 2018.
 
 <p align="center">
     <img src="https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png" width="50%" height="50%">
 </p>
-
-## Why, Who, What, When, Where, How
-TODO
-
-Question | Criterion | Explanation
----      | ---       |         ---
-Why      |           | 
-Who      |  | 
-What     |  |
-When     |  |
-Where |  |
-How   |  | 
 
 
 ## Model
