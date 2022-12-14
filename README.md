@@ -92,7 +92,7 @@ There are several reasons why one might use the method of visualizing filters an
 
 ### Convolutional Layers
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png" width="20%" height="20%">          <img src="https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png" width="20%" height="20%">          <img src="https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png" width="20%" height="20%">
+    <img src="https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png" width="20%" height="20%">                  <img src="https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png" width="20%" height="20%">                  <img src="https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png" width="20%" height="20%">
 </p>
 
 
