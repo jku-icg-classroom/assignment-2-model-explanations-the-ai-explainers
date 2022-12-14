@@ -55,7 +55,7 @@ This will download the pre-trained ResNet50 model from the PyTorch model zoo and
 We use ImageNet dataset. ImageNet is a large dataset of images that is commonly used in image classification and computer vision research. It was first introduced in 2009 and has become one of the most widely used datasets for training and evaluating image recognition models. The dataset contains more than 14 million images that are organized into 1000 different classes, such as different types of animals, objects, and scenes. ImageNet has played a key role in the development of many state-of-the-art image classification models, including ResNet50.
 
 <p align="center">
-    <img src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg" width="50%" height="50%">
+    <img src="https://miro.medium.com/max/750/1*IlzW43-NtJrwqtt5Xy3ISA.jpeg" width="30%" height="30%">
 </p>
 
 
@@ -88,11 +88,16 @@ There are several reasons why one might use the method of visualizing filters an
 ![filter](https://user-images.githubusercontent.com/27974341/207622544-f8e82d79-2649-4690-8f01-7a601f367e36.png)
 
 ### Convolutional Layers
-![conv_l0](https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207623124-b2fffe5f-da28-419f-8e4d-a11cff450643.png" width="30%" height="30%">
+</p>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png" width="30%" height="30%">
+</p>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png" width="30%" height="30%">
+</p>
 
-![conv_l20](https://user-images.githubusercontent.com/27974341/207623120-fcee09f4-33a9-4782-aabe-89fa40b9e240.png)
-
-![conv_l40](https://user-images.githubusercontent.com/27974341/207623112-680d10f4-fa7b-457b-8a0e-c528a07c9c90.png)
 
 As the picture proceeds through the layers, the details from the photographs gradually fade away. They appear to be noise, but there is undoubtedly a pattern in those feature maps that human eyes cannot identify, but a neural network can.
 
