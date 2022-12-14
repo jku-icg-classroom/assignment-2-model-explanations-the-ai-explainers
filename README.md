@@ -84,8 +84,9 @@ There are several reasons why one might use the method of visualizing filters an
 
 
 ### Filters 
-
-![filter](https://user-images.githubusercontent.com/27974341/207622544-f8e82d79-2649-4690-8f01-7a601f367e36.png)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/27974341/207622544-f8e82d79-2649-4690-8f01-7a601f367e36.png" width="30%" height="30%">
+</p>
 
 ### Convolutional Layers
 <p align="center">
