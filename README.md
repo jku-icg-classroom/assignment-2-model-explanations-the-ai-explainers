@@ -1,10 +1,7 @@
 
 # Explainable AI Assignment 2 - Model Explanations
-In this assignment, you are challenged to explain a model. For this, you will research exisiting approaches and apply them to your model and interpret the results.
 
 ## General Information Submission
-
-For the intermediate submission, please enter the group and dataset information. Coding is not yet necessary.
 
 **Team Name:** the AI explainers
 
@@ -16,30 +13,6 @@ For the intermediate submission, please enter the group and dataset information.
 | 12126769      | Hala        | Al-Jarajrah    |k12126769@students.jku.at  |33%           |
 | 12130348      | Nader       | Essam          |k12130348@students.jku.at  |33%           |
 
-## Development Environment
-
-Checkout this repo and change into the folder:
-```
-git clone https://github.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers.git
-cd assignment-2-model-explanations-the-ai-explainers
-```
-
-Load the conda environment from the shared `environment.yml` file:
-```
-conda env create -f environment.yml
-conda activate xai_model_explanation
-```
-
-> Hint: For more information on Anaconda and enviroments take a look at the README in our [tutorial repository](https://github.com/JKU-ICG/python-visualization-tutorial).
-
-Then launch Jupyter Lab:
-```
-jupyter lab
-```
-
-Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote](https://deepnote.com/), [colab](https://colab.research.google.com/), or any other service as long as the notebook runs in the standard Jupyter environment.
-
-
 ## Explainability framework: Hohman et al
 A brief examination major questions [Visual Analytics in Deep Learning: An Interrogative Survey for the Next Frontiers](https://arxiv.org/abs/1801.06889) by Hohman et. al from 2018.
 
@@ -47,6 +20,31 @@ A brief examination major questions [Visual Analytics in Deep Learning: An Inter
     <img src="https://fredhohman.com/visual-analytics-in-deep-learning/images/deepvis.png" width="50%" height="50%">
 </p>
 
+WHY
+* Debugging and Improving Models
+* Selecting and Comparing Models
+
+WHAT
+* Feature Maps Visualization
+* Feature Visualization by Optimization 
+* Gradient-weighted Class Activation Mapping (Grad-CAM)
+* Saliency Maps
+* Counterfactual Explainations using Adversarial
+
+WHEN
+* After Training
+
+WHO
+* Model Developer & Builder
+* Model User
+
+HOW
+* Illustrating Feature Maps
+* Illustrating Feature Maps with Optimization
+* Mapping the gradient-weighted Class Activation
+
+WHERE 
+* XAI Course
 
 ## Model
 
@@ -194,12 +192,39 @@ The model developers can benefit from this method when debugging to figure out w
 
 
 ## Ineractive Demo via Streamlit
-TODO
 Making ineractive visualizations helps to understand the model better and get a better insight and that all about in XAI. For this, we will use [Streamlit](https://streamlit.io/). Streamlit is a Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science.
+
+### Feature Maps Visualization
 
 [vis_feature_maps.webm](https://user-images.githubusercontent.com/27974341/206809086-2d41b28a-2fa2-4b69-b7cf-24a3d46f1c3b.webm)
 
 
+You can upload your own pictures or pictures from the default ones. With a slider you can choose which convolutional layer you want to look at.
+
+### GradCAM
 
 [gradcam_demo.webm](https://user-images.githubusercontent.com/27974341/207174388-fc513dc1-b281-4eeb-a96b-03e7a8d26969.webm)
+
+## Development Environment
+
+Checkout this repo and change into the folder:
+```
+git clone https://github.com/jku-icg-classroom/assignment-2-model-explanations-the-ai-explainers.git
+cd assignment-2-model-explanations-the-ai-explainers
+```
+
+Load the conda environment from the shared `environment.yml` file:
+```
+conda env create -f environment.yml
+conda activate xai_model_explanation
+```
+
+> Hint: For more information on Anaconda and enviroments take a look at the README in our [tutorial repository](https://github.com/JKU-ICG/python-visualization-tutorial).
+
+Then launch Jupyter Lab:
+```
+jupyter lab
+```
+
+Alternatively, you can also work with [binder](https://mybinder.org/), [deepnote](https://deepnote.com/), [colab](https://colab.research.google.com/), or any other service as long as the notebook runs in the standard Jupyter environment.
 
